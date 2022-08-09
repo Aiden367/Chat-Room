@@ -12,6 +12,7 @@ namespace Messenger
 {
     public partial class UserControl1 : UserControl
     {
+        UsernameAndPassword userNameAndPassword = new UsernameAndPassword();
         public UserControl1()
         {
             InitializeComponent();
@@ -29,20 +30,28 @@ namespace Messenger
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //String text = "Eat Deez nuts";
-            //MessageBox.Show(text);
-            frmMain.Instance.Content.Controls.Add(new ucMain { Dock = DockStyle.Fill });
-            frmMain.Instance.Content.Controls[0].SendToBack();
+            
+          
+            if(userNameAndPassword.checkUsername() == true && userNameAndPassword.checkPassword() == true)
+            {
+                userNameAndPassword.checkingUserName();
+                userNameAndPassword.checkingPassword();
+                MessageBox.Show("Login Successful");
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Login Details");
+            };
         }
 
         private void usernameTextBox_TextChanged(object sender, EventArgs e)
         {
-           
+           userNameAndPassword.Username = usernameTextBox.Text;
         }
 
         private void passwordTextBox_TextChanged_1(object sender, EventArgs e)
         {
-
+            userNameAndPassword.Password = passwordTextBox.Text;    
         }
     }
 }

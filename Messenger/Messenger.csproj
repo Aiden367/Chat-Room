@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialSkin" Version="0.2.1" />
   </ItemGroup>
 
