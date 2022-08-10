@@ -12,7 +12,7 @@ namespace Messenger
 {
     public partial class ucMain : UserControl
     {
-        sendMessageFrame userControl = new sendMessageFrame();
+        sendMessageFrame sendMessageFrame = new sendMessageFrame();
         public ucMain()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace Messenger
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //sendMessageFrame userControl = new sendMessageFrame();
-            userControl.Show();
+            sendMessageFrame.Show();
         }
     }
 }

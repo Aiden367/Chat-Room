@@ -37,6 +37,7 @@ namespace Messenger
 
             _instance = this;
              mainPanel.Controls.Add(new UserControl1() { Dock = DockStyle.Fill});
+             //mainPanel.Controls.Add(new RegisterFrame() { Dock = DockStyle.Fill });  
 
         }
     }

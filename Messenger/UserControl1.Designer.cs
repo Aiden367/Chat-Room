@@ -35,13 +35,14 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.signInButton = new System.Windows.Forms.Button();
+            this.registerButton = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(72, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(131, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(131, 138);
             this.pictureBox1.TabIndex = 0;
@@ -49,7 +50,7 @@
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(50, 253);
+            this.usernameTextBox.Location = new System.Drawing.Point(105, 265);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(170, 23);
             this.usernameTextBox.TabIndex = 1;
@@ -58,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 235);
+            this.label1.Location = new System.Drawing.Point(105, 247);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 15);
             this.label1.TabIndex = 2;
@@ -67,7 +68,7 @@
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(50, 308);
+            this.passwordTextBox.Location = new System.Drawing.Point(105, 355);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(170, 23);
             this.passwordTextBox.TabIndex = 3;
@@ -76,7 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 290);
+            this.label2.Location = new System.Drawing.Point(105, 337);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 15);
             this.label2.TabIndex = 4;
@@ -85,18 +86,29 @@
             // 
             // signInButton
             // 
-            this.signInButton.Location = new System.Drawing.Point(63, 361);
+            this.signInButton.Location = new System.Drawing.Point(105, 404);
             this.signInButton.Name = "signInButton";
-            this.signInButton.Size = new System.Drawing.Size(131, 45);
+            this.signInButton.Size = new System.Drawing.Size(147, 41);
             this.signInButton.TabIndex = 5;
-            this.signInButton.Text = "Sign in";
+            this.signInButton.Text = "Login";
             this.signInButton.UseVisualStyleBackColor = true;
             this.signInButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // registerButton
+            // 
+            this.registerButton.AutoSize = true;
+            this.registerButton.Location = new System.Drawing.Point(151, 467);
+            this.registerButton.Name = "registerButton";
+            this.registerButton.Size = new System.Drawing.Size(47, 15);
+            this.registerButton.TabIndex = 6;
+            this.registerButton.Text = "Sign up";
+            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.registerButton);
             this.Controls.Add(this.signInButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.passwordTextBox);
@@ -104,7 +116,8 @@
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.pictureBox1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(305, 456);
+            this.Size = new System.Drawing.Size(346, 568);
+            this.Load += new System.EventHandler(this.UserControl1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -119,5 +132,6 @@
         private TextBox passwordTextBox;
         private Label label2;
         private Button signInButton;
+        private Label registerButton;
     }
 }

@@ -40,6 +40,7 @@
             this.displayedText.Name = "displayedText";
             this.displayedText.Size = new System.Drawing.Size(712, 395);
             this.displayedText.TabIndex = 0;
+            this.displayedText.TextChanged += new System.EventHandler(this.displayedText_TextChanged);
             // 
             // sendMessageTextBox
             // 

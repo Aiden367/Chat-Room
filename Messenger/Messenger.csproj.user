@@ -4,6 +4,9 @@
     <Compile Update="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="RegisterFrame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="sendMessageFrame.cs">
       <SubType>Form</SubType>
     </Compile>

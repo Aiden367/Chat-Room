@@ -13,6 +13,7 @@ namespace Messenger
     public partial class UserControl1 : UserControl
     {
         UsernameAndPassword userNameAndPassword = new UsernameAndPassword();
+        //RegisterFrame registerFrame = new RegisterFrame();
         public UserControl1()
         {
             InitializeComponent();
@@ -52,6 +53,22 @@ namespace Messenger
         private void passwordTextBox_TextChanged_1(object sender, EventArgs e)
         {
             userNameAndPassword.Password = passwordTextBox.Text;    
+        }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+
+            
+            frmMain.Instance.Content.Controls.Add(new RegisterFrame { Dock = DockStyle.Fill });
+            frmMain.Instance.Content.Controls[0].SendToBack();
+            
+            
+
+        }
+
+        private void UserControl1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

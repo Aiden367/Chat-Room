@@ -17,13 +17,18 @@ namespace Messenger
         public sendMessageFrame()
         {
             InitializeComponent();
-             MaterialSkinManager manager = MaterialSkinManager.Instance;
+            MaterialSkinManager manager = MaterialSkinManager.Instance;
             manager.AddFormToManage(this);
             manager.Theme = MaterialSkinManager.Themes.LIGHT;
             manager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500, Primary.Blue500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         private void sendMessageFrame_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void displayedText_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -21,3 +21,4 @@ C:\Users\evilp\source\repos\ChatRoom\Messenger\obj\Debug\net6.0-windows\Messenge
 C:\Users\evilp\source\repos\ChatRoom\Messenger\obj\Debug\net6.0-windows\Messenger.UserControl1.resources
 C:\Users\evilp\source\repos\ChatRoom\Messenger\obj\Debug\net6.0-windows\Messenger.ucMain.resources
 C:\Users\evilp\source\repos\ChatRoom\Messenger\obj\Debug\net6.0-windows\Messenger.SendMessageFrame.resources
+C:\Users\evilp\source\repos\ChatRoom\Messenger\obj\Debug\net6.0-windows\Messenger.RegisterFrame.resources

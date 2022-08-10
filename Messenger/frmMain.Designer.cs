@@ -43,14 +43,14 @@
             // 
             this.mainPanel.Location = new System.Drawing.Point(1, 68);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(319, 465);
+            this.mainPanel.Size = new System.Drawing.Size(372, 565);
             this.mainPanel.TabIndex = 0;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(323, 536);
+            this.ClientSize = new System.Drawing.Size(376, 632);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panel1);
             this.Name = "frmMain";
