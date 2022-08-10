@@ -8,6 +8,8 @@ namespace Messenger
         {
             Console.WriteLine("Hello World");
             ApplicationConfiguration.Initialize();
+           DatabaseConnection databaseConnection = new DatabaseConnection();
+            databaseConnection.connection();
             Application.Run(new frmMain());
         }
     }

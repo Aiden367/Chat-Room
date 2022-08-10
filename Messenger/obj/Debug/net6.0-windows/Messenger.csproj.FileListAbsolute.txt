@@ -22,3 +22,9 @@ C:\Users\evilp\source\repos\ChatRoom\Messenger\obj\Debug\net6.0-windows\Messenge
 C:\Users\evilp\source\repos\ChatRoom\Messenger\obj\Debug\net6.0-windows\Messenger.ucMain.resources
 C:\Users\evilp\source\repos\ChatRoom\Messenger\obj\Debug\net6.0-windows\Messenger.SendMessageFrame.resources
 C:\Users\evilp\source\repos\ChatRoom\Messenger\obj\Debug\net6.0-windows\Messenger.RegisterFrame.resources
+C:\Users\evilp\source\repos\ChatRoom\Messenger\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\evilp\source\repos\ChatRoom\Messenger\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\evilp\source\repos\ChatRoom\Messenger\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\evilp\source\repos\ChatRoom\Messenger\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\evilp\source\repos\ChatRoom\Messenger\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\evilp\source\repos\ChatRoom\Messenger\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

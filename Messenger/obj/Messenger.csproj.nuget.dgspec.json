@@ -43,6 +43,10 @@
             "MaterialSkin": {
               "target": "Package",
               "version": "[0.2.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             }
           },
           "imports": [
