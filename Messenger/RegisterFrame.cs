@@ -15,6 +15,8 @@ namespace Messenger
        
        
         UserControl1 userControl1 = new UserControl1();
+
+        UsernameAndPassword UsernameAndPassword = new UsernameAndPassword();
         public RegisterFrame()
         {
             InitializeComponent();
@@ -23,7 +25,9 @@ namespace Messenger
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            UsernameAndPassword.checkingRegisteredUserName();
+            UsernameAndPassword.registerCheckingPassword();
+            UsernameAndPassword.usernameAndPasswordToDatabase();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -39,6 +43,16 @@ namespace Messenger
 
         }
 
-        
+        private void RegisterUsername_TextChanged(object sender, EventArgs e)
+        {
+            //UsernameAndPassword.checkingRegisteredUserName();
+            UsernameAndPassword.getRegisteredUsername = registerUsername.Text;
+
+        }
+
+        private void registerPasswordTextBox_TextChanged(object sender, EventArgs e)
+        {
+            UsernameAndPassword.getRegisteredPassword = registerPasswordTextBox.Text;
+        }
     }
 }

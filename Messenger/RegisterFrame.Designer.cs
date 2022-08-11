@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterFrame));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.registerUsernameLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.registerUsername = new System.Windows.Forms.TextBox();
             this.registerPasswordLabel = new System.Windows.Forms.Label();
             this.registerPasswordTextBox = new System.Windows.Forms.TextBox();
             this.registerUserButton = new System.Windows.Forms.Button();
@@ -57,12 +57,13 @@
             this.registerUsernameLabel.TabIndex = 1;
             this.registerUsernameLabel.Text = "Enter Username";
             // 
-            // textBox1
+            // registerUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 275);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 23);
-            this.textBox1.TabIndex = 2;
+            this.registerUsername.Location = new System.Drawing.Point(92, 275);
+            this.registerUsername.Name = "registerUsername";
+            this.registerUsername.Size = new System.Drawing.Size(175, 23);
+            this.registerUsername.TabIndex = 2;
+            this.registerUsername.TextChanged += new System.EventHandler(this.RegisterUsername_TextChanged);
             // 
             // registerPasswordLabel
             // 
@@ -79,6 +80,7 @@
             this.registerPasswordTextBox.Name = "registerPasswordTextBox";
             this.registerPasswordTextBox.Size = new System.Drawing.Size(175, 23);
             this.registerPasswordTextBox.TabIndex = 4;
+            this.registerPasswordTextBox.TextChanged += new System.EventHandler(this.registerPasswordTextBox_TextChanged);
             // 
             // registerUserButton
             // 
@@ -108,7 +110,7 @@
             this.Controls.Add(this.registerUserButton);
             this.Controls.Add(this.registerPasswordTextBox);
             this.Controls.Add(this.registerPasswordLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.registerUsername);
             this.Controls.Add(this.registerUsernameLabel);
             this.Controls.Add(this.pictureBox1);
             this.Name = "RegisterFrame";
@@ -124,7 +126,7 @@
 
         private PictureBox pictureBox1;
         private Label registerUsernameLabel;
-        private TextBox textBox1;
+        private TextBox registerUsername;
         private Label registerPasswordLabel;
         private TextBox registerPasswordTextBox;
         private Button registerUserButton;

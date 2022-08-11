@@ -1,14 +1,23 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Messenger
 {
     public class DatabaseConnection
     {
+        private SqlConnection databaseConnectionString;
+
+        public SqlConnection getConnection
+        {
+            get { return databaseConnectionString; }
+            set { databaseConnectionString = value; }
+
+        }
         public void connection()
         {
             string connectionString;
@@ -16,22 +25,26 @@ namespace Messenger
             SqlConnection cnn;
             try
             {
-                connectionString = "Data Source = DESKTOP-ALULP91\\SQLEXPRESS;Initial Catalog = ChatroomDB;Integrated Security = True;";
-
+                connectionString = "Data Source = DESKTOP-ALULP91\\SQLEXPRESS;Initial Catalog = ChatroomDB;Integrated Security = True;TrustServerCertificate=True;";
+               
                 cnn = new SqlConnection(connectionString);
-
+                getConnection = cnn;
                 cnn.Open();
 
                 MessageBox.Show("Connected to Database");
-                cnn.Close();
-               
-            }catch(Exception e)
+
+
+            }
+            catch (SqlException  e)
             {
-                Console.WriteLine(e.Message);
+                MessageBox.Show(e.Message);
                 MessageBox.Show("Could not connect to Database");
             }
 
         }
 
+
+        
+        
     }
 }
