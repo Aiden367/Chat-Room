@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Messenger
+namespace Messenger.Classes
 {
     public class DatabaseConnection
     {
@@ -26,7 +26,7 @@ namespace Messenger
             try
             {
                 connectionString = "Data Source = DESKTOP-ALULP91\\SQLEXPRESS;Initial Catalog = ChatroomDB;Integrated Security = True;TrustServerCertificate=True;";
-               
+
                 cnn = new SqlConnection(connectionString);
                 getConnection = cnn;
                 cnn.Open();
@@ -35,7 +35,7 @@ namespace Messenger
 
 
             }
-            catch (SqlException  e)
+            catch (SqlException e)
             {
                 MessageBox.Show(e.Message);
                 MessageBox.Show("Could not connect to Database");
@@ -44,7 +44,7 @@ namespace Messenger
         }
 
 
-        
-        
+
+
     }
 }

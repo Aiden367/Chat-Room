@@ -1,5 +1,6 @@
 ﻿using MaterialSkin;
 using MaterialSkin.Controls;
+using Messenger.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,8 +15,10 @@ namespace Messenger
 {
     public partial class sendMessageFrame : MaterialForm
     {
+        Server server = new Server();
         public sendMessageFrame()
         {
+           
             InitializeComponent();
             MaterialSkinManager manager = MaterialSkinManager.Instance;
             manager.AddFormToManage(this);
@@ -30,7 +33,7 @@ namespace Messenger
 
         private void displayedText_TextChanged(object sender, EventArgs e)
         {
-
+            server.getTextFromUser = displayedText.Text;
         }
     }
 }

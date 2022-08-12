@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="frmMain.cs">
+    <Compile Update="Forms(JFrames)\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="RegisterFrame.cs">
+    <Compile Update="UserControl\RegisterFrame.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="sendMessageFrame.cs">
+    <Compile Update="Forms(JFrames)\sendMessageFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UserControl1.cs">
+    <Compile Update="UserControl\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ucMain.cs">
+    <Compile Update="UserControl\ucMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

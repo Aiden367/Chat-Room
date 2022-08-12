@@ -42,9 +42,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(106, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(60, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 135);
+            this.pictureBox1.Size = new System.Drawing.Size(268, 249);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -95,7 +95,7 @@
             // alreadyRegisteredLabel
             // 
             this.alreadyRegisteredLabel.AutoSize = true;
-            this.alreadyRegisteredLabel.Location = new System.Drawing.Point(106, 506);
+            this.alreadyRegisteredLabel.Location = new System.Drawing.Point(115, 492);
             this.alreadyRegisteredLabel.Name = "alreadyRegisteredLabel";
             this.alreadyRegisteredLabel.Size = new System.Drawing.Size(105, 15);
             this.alreadyRegisteredLabel.TabIndex = 7;
@@ -106,6 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.alreadyRegisteredLabel);
             this.Controls.Add(this.registerUserButton);
             this.Controls.Add(this.registerPasswordTextBox);
