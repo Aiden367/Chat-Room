@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +12,8 @@ namespace Messenger.Classes
     public class Server
     {
         private String textFromUser;
-
+        SimpleTcpServer server;
+        SimpleTcpClient client;
         public string getTextFromUser
         {
             get { return textFromUser; }
@@ -19,7 +21,7 @@ namespace Messenger.Classes
         }
 
 
-        SimpleTcpServer server;
+       
 
         public void serverConnection()
         {
@@ -35,7 +37,7 @@ namespace Messenger.Classes
             e.ReplyLine(string.Format("You said: {0}", e.MessageString));
 
         }     
-            
+       
          
         public static string GetLocalIPAddress()
         {
@@ -49,5 +51,38 @@ namespace Messenger.Classes
             }
             throw new Exception("No network adapters with an IPv4 address in the system!");
         }
+
+
+        public void establishConnection()
+        {
+            System.Net.IPAddress ip = new System.Net.IPAddress(long.Parse(GetLocalIPAddress()));
+            server.Start(ip, 1400);
+
+        }
+
+        public void tcpClient()
+        {
+            client = new SimpleTcpClient();
+            client.StringEncoder = Encoding.UTF8;
+            client.DataReceived += Client_DataReceived;
+        }
+
+        public void Client_DataReceived(object? sender, SimpleTCP.Message e)
+        {
+            textFromUser += e.MessageString;
+            //e.ReplyLine(string.Format("You said: {0}", e.MessageString));
+        }
+
+        public void sendingMessage()
+        {
+            client.WriteLineAndGetReply
+        }
+
+
+        public string remoteIP()
+        {
+            ipRemote = new IPEndPoint(IPAddress.Parse(tex))
+        }
+
     }
 }
