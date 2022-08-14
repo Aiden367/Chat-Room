@@ -19,8 +19,7 @@
 
 ## Description
 
-The Student-Portal programme is a programme that was created to allow for staff at an educational institute to store their students personal information on
-the schools system thus allowing for a more effecient way of tracking the amount of students at the school.
+The ActuallyGoodChat Application is an application that allows users to add each other and talk to each other either during a video game or after work while relaxing to catch up with a friend, this programme has a slick GUI and is extremely easy to use.
 
 #### Technologies
 
