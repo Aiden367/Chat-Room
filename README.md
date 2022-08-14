@@ -25,7 +25,7 @@ The ActuallyGoodChat Application is an application that allows users to add each
 
 - Microsoft SQL server
 - C#
-- Visual Studio Code 2022
+- Visual Studio  2022
 - WPF
 
 
